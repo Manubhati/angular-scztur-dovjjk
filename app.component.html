@@ -1,0 +1,32 @@
+<!-- custom code start -->
+<!-- custom code end -->
+<div class="control-section">
+  <ejs-spreadsheet #default (created)="created()">
+    <e-sheets>
+      <e-sheet name="Car Sales Report">
+        <e-ranges>
+          <e-range [dataSource]="data"></e-range>
+        </e-ranges>
+        <e-rows>
+          <e-row [index]="30">
+            <e-cells>
+              <e-cell [index]="4" value="Total Amount:"></e-cell>
+              <e-cell formula="=SUM(F2:F30)"></e-cell>
+            </e-cells>
+          </e-row>
+        </e-rows>
+        <e-columns>
+          <e-column [width]="180"></e-column>
+          <e-column [width]="250"></e-column>
+          <e-column [width]="130"></e-column>
+          <e-column [width]="130"></e-column>
+          <e-column [width]="180"></e-column>
+          <e-column [width]="130"></e-column>
+          <e-column [width]="120"></e-column>
+        </e-columns>
+      </e-sheet>
+    </e-sheets>
+  </ejs-spreadsheet>
+</div>
+<!-- custom code start -->
+<!-- custom code end -->
